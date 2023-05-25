@@ -7,23 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+/>
+<link
+href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+rel="stylesheet"
+/>
 <body>
-    <div class="container">
+    <br>
+    <div class="container p-5 mb-4 bg-tertiary rounded-3" style="border:2px solid black">
         <h1>Temperature Converter</h1>
         <div class="converter-row">
         <form id="form">
-            <div class="temp">
+            <div class="temp p-1">
                 <label>°C</label>
-                <input type="number" id="celsius" placeholder="Celsius">
+                <input type="number" id="celsius" class="rounded-3" placeholder="Celsius">
             </div>
 
-            <div class="temp">
+            <div class="temp p-2">
                 <label>°F</label>
-                <input type="number" id="fahrenheit" placeholder="Fahrenheit">
+                <input type="number" id="fahrenheit" class="rounded-3" placeholder="Fahrenheit">
             </div>
         </form>
         <br>
-            <input type = "button" value = "Clear" onClick = "fun()"/>
+            <input type="button" value="Clear" class="btn text-light bg-primary " onClick="fun()"/>
         </div>
     </div>
     
